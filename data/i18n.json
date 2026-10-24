@@ -32,7 +32,7 @@
   "stMail": "Se abrirá tu app de correo para enviarlo.",
   "msgs": [
    "Hola!",
-   "Hablemos!"
+   "Hablemos!",
    "No me toques!"
   ],
   "t": {
@@ -75,7 +75,7 @@
   "stMail": "Your email app will open to send it.",
   "msgs": [
    "Hi!",
-   "Let’s talk!"
+   "Let’s talk!",
    "Don't touch me!"
   ],
   "t": {
