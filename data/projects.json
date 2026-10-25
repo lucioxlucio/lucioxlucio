@@ -246,7 +246,7 @@
     ],
     "m": {
   "type": "image",
-  "fit": "x",
+  "fit": "y",
   "src": [
     "media/ux-ui/3pas-studios/3PAS.jpg"
   ]
@@ -274,7 +274,7 @@
     ],
     "m": {
   "type": "image",
-  "fit": "x",
+  "fit": "y",
   "src": [
     "media/ux-ui/universal-hotel-supply/UHS.jpg"
   ]
@@ -302,7 +302,7 @@
     ],
      "m": {
   "type": "image",
-  "fit": "x",
+  "fit": "y",
   "src": [
     "media/ux-ui/ags-growth-agency/AGS.jpg"
   ]
