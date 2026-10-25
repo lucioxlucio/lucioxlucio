@@ -528,7 +528,16 @@
      "m": {
   "type": "image",
   "fit": "x",
-  "src": "media/otros/linea-x-font/2021_tipomov_2c_Tp2_CaloceroArcellaLucio.m4v"
+  "src": [
+        "media/ilustracion/el-limonero/EL LIMONERO01.png",
+    "media/ilustracion/el-limonero/EL LIMONERO02.png",
+    "media/ilustracion/el-limonero/EL LIMONERO03.png",
+    "media/ilustracion/el-limonero/EL LIMONERO04.png",
+    "media/ilustracion/el-limonero/EL LIMONERO05.png",
+    "media/ilustracion/el-limonero/EL LIMONERO06.png",
+    "media/ilustracion/el-limonero/EL LIMONERO07.png",
+    "media/ilustracion/el-limonero/EL LIMONERO08.png"
+      ]
 }
    }
   ]
@@ -552,11 +561,7 @@
     "m": {
   "type": "video",
   "fit": "x",
-  "src": [
-    "media/otros/sol-de-mayo/SDM01.png",
-    "media/otros/sol-de-mayo/SDM02.png",
-    "media/otros/sol-de-mayo/SDM03.png"
-  ]
+  "src": "media/otros/linea-x-font/2021_tipomov_2c_Tp2_CaloceroArcellaLucio.m4v" 
 }
    },
    {
