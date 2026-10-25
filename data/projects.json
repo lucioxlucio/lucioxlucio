@@ -528,16 +528,7 @@
      "m": {
   "type": "image",
   "fit": "x",
-  "src": [
-    "media/ilustracion/el-limonero/EL LIMONERO01.png",
-    "media/ilustracion/el-limonero/EL LIMONERO02.png",
-    "media/ilustracion/el-limonero/EL LIMONERO03.png",
-    "media/ilustracion/el-limonero/EL LIMONERO04.png",
-    "media/ilustracion/el-limonero/EL LIMONERO05.png",
-    "media/ilustracion/el-limonero/EL LIMONERO06.png",
-    "media/ilustracion/el-limonero/EL LIMONERO07.png",
-    "media/ilustracion/el-limonero/EL LIMONERO08.png"
-  ]
+  "src": "media/otros/linea-x-font/2021_tipomov_2c_Tp2_CaloceroArcellaLucio.m4v
 }
    }
   ]
@@ -558,7 +549,15 @@
      "Fuente diseñada en FADU, UBA. Entender cómo una tipografía es construida y a partir de ahí reconstruirla. Pesos, contrastes, legibilidad, tamaños.",
      "Typeface designed at FADU, UBA. Understanding how a typeface is built and, from there, rebuilding it. Weights, contrasts, legibility, sizes."
     ],
-    "m": null
+    "m": {
+  "type": "video",
+  "fit": "x",
+  "src": [
+    "media/otros/sol-de-mayo/SDM01.png",
+    "media/otros/sol-de-mayo/SDM02.png",
+    "media/otros/sol-de-mayo/SDM03.png"
+  ]
+}
    },
    {
     "n": "Casa Rocco",
@@ -574,7 +573,15 @@
      "Sol de Mayo es una productora de videojuegos argentinos. (WIP)",
      "Sol de Mayo is an Argentine video game production company. (WIP)"
     ],
-    "m": null
+    "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/otros/sol-de-mayo/SDM01.png",
+    "media/otros/sol-de-mayo/SDM02.png",
+    "media/otros/sol-de-mayo/SDM03.png"
+  ]
+}
    }
   ]
  }
