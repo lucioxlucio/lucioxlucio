@@ -184,7 +184,7 @@ body[data-view="contacto"] .clippy{display:none}
 .mtop .logo{grid-column:2}
 .mclose{grid-column:3;justify-self:end;margin-top:-4px;padding:0;background:none;border:0;color:#fff;font:inherit;font-size:24px;line-height:32px;font-weight:400;cursor:pointer}
 .mlinks{display:flex;flex-direction:column;gap:24px;margin-top:60px}
-.mlinks a{font-size:40px;line-height:56px;font-weight:400;color:#fff}
+.mlinks a{font-size:40px;line-height:56px;font-weight:600;color:#fff}
 .mlang{position:absolute;left:16px;bottom:calc(58px + env(safe-area-inset-bottom,0px));display:flex;gap:82px}
 .mlang button{padding:0 0 3px;background:none;border:0;border-bottom:1px solid transparent;color:#fff;font:inherit;font-size:24px;line-height:32px;font-weight:300;cursor:pointer}
 .mlang button[aria-pressed="true"]{font-weight:400;border-bottom-color:#fff}
