@@ -346,7 +346,10 @@
     "tools": [
      "adobe"
     ],
-    "m": 01.gif
+    "m": {
+  "type": "video",
+  "src": "media/editorial/el-arbol/ELARBOL.mp4"
+}
    },
    {
     "n": "El Río",
@@ -357,7 +360,10 @@
     "tools": [
      "adobe"
     ],
-    "m": GIF.gif
+    "m": {
+  "type": "video",
+  "src": "media/editorial/el-rio/ELRIO.mp4"
+}
    },
    {
     "n": "MA",
@@ -368,7 +374,10 @@
     "tools": [
      "adobe"
     ],
-    "m": Cover.gif
+    "m": {
+  "type": "video",
+  "src": "media/editorial/ma/MA.mp4"
+}
    },
    {
     "n": "Sgto. Cabral",
@@ -379,7 +388,10 @@
     "tools": [
      "adobe"
     ],
-    "m": 1.gif
+    "m": {
+  "type": "video",
+  "src": "media/editorial/sgto-cabral/Cabral.mp4"
+}
    },
    {
     "n": "Les Isolés",
@@ -390,7 +402,10 @@
     "tools": [
      "adobe"
     ],
-    "m": COVER.gif
+    "m": {
+  "type": "video",
+  "src": "media/editorial/les-isoles/ISOLES.mp4"
+}
    },
    {
     "n": [
@@ -404,7 +419,20 @@
     "tools": [
      "adobe"
     ],
-    "m": null
+   "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/editorial/afiches/Afiches 01.jpg",
+   "media/editorial/afiches/Afiches 02.jpg",
+   "media/editorial/afiches/Afiches 03.jpg",
+   "media/editorial/afiches/Afiches 04.jpg",
+   "media/editorial/afiches/Afiches 05.jpg",
+   "media/editorial/afiches/Afiches 06.jpg",
+   "media/editorial/afiches/Afiches 07.jpg",
+   "media/editorial/afiches/Afiches 08.jpg"
+  ]
+}
    }
   ]
  },
