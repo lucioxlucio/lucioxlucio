@@ -344,7 +344,18 @@
     "tools": [
      "blender"
     ],
-    "m": null
+       "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/3d/material-bank/MB 01.png",
+    "media/3d/material-bank/MB 02.png",
+    "media/3d/material-bank/MB 03.png",
+    "media/3d/material-bank/MB 04.png",
+    "media/3d/material-bank/MB 05.png",
+    "media/3d/material-bank/MB 06.png"
+  ]
+}
    }
   ]
  },
@@ -470,7 +481,20 @@
     "tools": [
      "adobe"
     ],
-    "m": null
+       "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/ilustracion/foodie/FOODIE 01.png",
+    "media/ilustracion/foodie/FOODIE 02.png",
+    "media/ilustracion/foodie/FOODIE 03.png",
+    "media/ilustracion/foodie/FOODIE 04.png",
+    "media/ilustracion/foodie/FOODIE 05.png",
+    "media/ilustracion/foodie/FOODIE 06.png",
+    "media/ilustracion/foodie/FOODIE 07.png",
+    "media/ilustracion/foodie/FOODIE 08.png"
+  ]
+}
    },
    {
     "n": "The Lost Record",
@@ -481,7 +505,15 @@
     "tools": [
      "adobe"
     ],
-    "m": null
+      "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/ilustracion/the-lost-record/THE LOST RECORD 01.png",
+    "media/ilustracion/the-lost-record/THE LOST RECORD 02.png",
+    "media/ilustracion/the-lost-record/THE LOST RECORD 03.png",
+    "media/ilustracion/the-lost-record/THE LOST RECORD 04.png"
+  ]
    },
    {
     "n": "El Limonero",
@@ -492,7 +524,21 @@
     "tools": [
      "adobe"
     ],
-    "m": null
+     "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/ilustracion/el-limonero/EL LIMONERO01.png",
+    "media/ilustracion/el-limonero/EL LIMONERO02.png",
+    "media/ilustracion/el-limonero/EL LIMONERO03.png",
+    "media/ilustracion/el-limonero/EL LIMONERO04.png",
+    "media/ilustracion/el-limonero/EL LIMONERO05.png",
+    "media/ilustracion/el-limonero/EL LIMONERO06.png",
+    "media/ilustracion/el-limonero/EL LIMONERO07.png",
+    "media/ilustracion/el-limonero/EL LIMONERO08.png"
+
+  ]
+   },
    }
   ]
  },
