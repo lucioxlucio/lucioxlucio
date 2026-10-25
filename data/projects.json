@@ -423,14 +423,14 @@
   "type": "image",
   "fit": "x",
   "src": [
-    "media/editorial/afiches/Afiches 01.jpg",
-    "media/editorial/afiches/Afiches 02.jpg",
-    "media/editorial/afiches/Afiches 03.jpg",
-    "media/editorial/afiches/Afiches 04.jpg",
-    "media/editorial/afiches/Afiches 05.jpg",
-    "media/editorial/afiches/Afiches 06.jpg",
-    "media/editorial/afiches/Afiches 07.jpg",
-    "media/editorial/afiches/Afiches 08.jpg"
+    "media/editorial/afiches/Afiches 01.png",
+    "media/editorial/afiches/Afiches 02.png",
+    "media/editorial/afiches/Afiches 03.png",
+    "media/editorial/afiches/Afiches 04.png",
+    "media/editorial/afiches/Afiches 05.png",
+    "media/editorial/afiches/Afiches 06.png",
+    "media/editorial/afiches/Afiches 07.png",
+    "media/editorial/afiches/Afiches 08.png"
   ]
 }
    }
