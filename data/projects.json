@@ -244,7 +244,13 @@
      "figma",
      "adobe"
     ],
-    "m": null
+    "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/editorial/afiches/3PAS.jpg"
+  ]
+}
    },
    {
     "n": "Universal Hotel Supply",
@@ -266,7 +272,13 @@
      "figma",
      "adobe"
     ],
-    "m": null
+    "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/editorial/afiches/UHS.jpg"
+  ]
+}
    },
    {
     "n": "AGS Growth Agency",
@@ -288,7 +300,13 @@
      "figma",
      "adobe"
     ],
-    "m": null
+     "m": {
+  "type": "image",
+  "fit": "x",
+  "src": [
+    "media/editorial/afiches/AGS.jpg"
+  ]
+}
    },
    {
     "n": "Sobremesa",
