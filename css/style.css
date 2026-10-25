@@ -144,7 +144,7 @@ body[data-view="contacto"] .clippy{display:none}
 .works[data-state="open"] .pmedia{display:grid;animation:fade .5s ease .1s both}
 .pmedia video,.pmedia img{width:100%;height:100%;object-fit:cover;display:block}
 .pmedia .mph{font-weight:300;font-size:20px;padding:24px}
-.pmedia .sl{display:flex;width:100%;height:100%;overflow:auto;scroll-snap-type:x mandatory}
+.pmedia .sl{display:flex;gap: 8px;width:100%;height:100%;overflow:auto;scroll-snap-type:x mandatory}
 .pmedia .sl.v{flex-direction:column;scroll-snap-type:y mandatory}
 .pmedia .sl>*{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start}
 .pmedia>*{animation:fade .5s ease}
@@ -199,7 +199,7 @@ body.menu{overflow:hidden}
 .mmedia>*{animation:fade .5s ease}
 .mmedia video,.mmedia img{width:100%;height:100%;object-fit:cover;display:block}
 .mmedia .mph{font-weight:300;font-size:20px;padding:16px}
-.mmedia .sl{display:flex;width:100%;height:100%;overflow:auto;scroll-snap-type:x mandatory}
+.mmedia .sl{display:flex;gap: 8px;width:100%;height:100%;overflow:auto;scroll-snap-type:x mandatory}
 .mmedia .sl.v{flex-direction:column;scroll-snap-type:y mandatory}
 .mmedia .sl>*{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start}
 .mtools{list-style:none;margin:12px 0 0;padding:0;display:flex;gap:16px;align-items:center}
