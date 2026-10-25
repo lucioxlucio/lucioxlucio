@@ -229,7 +229,7 @@ body.menu{overflow:hidden}
   .nav ul,.nav .lang{display:none}
   .burger{display:block;grid-column:3;justify-self:end;margin-top:-4px;padding:0;background:none;border:0;color:#fff;font:inherit;font-size:32px;line-height:32px;font-weight:400;cursor:pointer}
   .mmenu{display:block}
-  .hero{padding:120px 0 40px;justify-content:center;overflow:hidden}
+  .hero{padding:80px 0 0px;justify-content:center;overflow:hidden}
   .media{width:117.3vw;max-width:none;flex:none;aspect-ratio:563/530;-webkit-mask-image:radial-gradient(circle closest-side,#000 66%,transparent 100%);mask-image:radial-gradient(circle closest-side,#000 66%,transparent 100%)}
   .works{display:block;padding:109px var(--pad) 140px}
   #cats,#pMedia,#pTools{display:none!important}
