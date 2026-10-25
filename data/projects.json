@@ -47,8 +47,8 @@
    {
     "n": "COCO Reel 2023",
     "d": [
-     "Proyecto realizado como líder del área de Motion Graphics en el estudio COCO. Desde storyboard hasta su ejecución.",
-     "Project carried out as head of the Motion Graphics area at COCO studio, from storyboard to execution."
+     "Proyecto realizado como líder del área de Motion Graphics en el estudio COCO. Desde storyboard hasta su ejecución. Reel de trabajos realizados hasta el año 2023 por parte del estudio.",
+     "Project carried out as head of the Motion Graphics area at COCO studio, from storyboard to execution. 2023 Reel"
     ],
     "l": [
      {
@@ -61,7 +61,10 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+    "m": {
+  "type": "video",
+  "src": "media/motion-graphics/coco-reel-2023/Coco.mp4"
+}
    },
    {
     "n": "Dieline",
@@ -118,7 +121,10 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+    "m": {
+  "type": "video",
+  "src": "media/motion-graphics/modular-closets/ModularClosets.mp4"
+}
    },
    {
     "n": "Gin Animation",
@@ -137,7 +143,10 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+   "m": {
+  "type": "video",
+  "src": "media/motion-graphics/gni-animation/Gin.mp4"
+}
    },
    {
     "n": "Relic",
@@ -159,7 +168,7 @@
     "m": null
    },
    {
-    "n": "Solary",
+    "n": "Rocksalt",
     "d": [
      "Proyecto realizado como líder del área de Motion Graphics en el estudio COCO. Desde storyboard hasta su ejecución.",
      "Project carried out as head of the Motion Graphics area at COCO studio, from storyboard to execution."
@@ -175,7 +184,10 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+     "m": {
+  "type": "video",
+  "src": "media/motion-graphics/Rocksalt/Rocksalt.mp4"
+}
    },
    {
     "n": "The Gettys Company",
