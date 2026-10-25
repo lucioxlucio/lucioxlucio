@@ -140,8 +140,18 @@ body[data-view="contacto"] .clippy{display:none}
 .works[data-state="open"] .cat:not(.sel){display:none}
 .works[data-state="open"] .cat.sel{grid-column:1/3}
 .works[data-state="open"] .cat.sel .cx{display:block;animation:fade .4s ease both}
-.pmedia{display:none;grid-column:3/-1;grid-row:1;aspect-ratio:1159/652;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);place-items:center;text-align:center}
-.works[data-state="open"] .pmedia{display:grid;animation:fade .5s ease .1s both}
+.pmedia{
+  display:none;
+  grid-column:3/-1;
+  grid-row:1;
+  aspect-ratio:1159/652;
+  border-radius:12px;
+  overflow:hidden;
+  background:transparent;
+  border:none;
+  place-items:center;
+  text-align:center;
+}.works[data-state="open"] .pmedia{display:grid;animation:fade .5s ease .1s both}
 .pmedia video,.pmedia img{width:100%;height:100%;object-fit:cover;display:block}
 .pmedia .mph{font-weight:300;font-size:20px;padding:24px}
 .pmedia .sl{display:flex;gap: 8px;width:100%;height:100%;overflow:auto;scroll-snap-type:x mandatory}
@@ -194,8 +204,17 @@ body.menu{overflow:hidden}
 .minfo p{margin:8px 0 0;font-size:16px;line-height:20px;font-weight:400}
 .minfo .links{display:flex;flex-direction:column;gap:2px;margin-top:8px}
 .minfo a.ext{font-size:16px;line-height:20px;font-weight:400;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
-.mmedia{margin-top:16px;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);display:grid;place-items:center;text-align:center}
-.mmedia:empty{display:none}
+.mmedia{
+  margin-top:16px;
+  aspect-ratio:16/9;
+  border-radius:12px;
+  overflow:hidden;
+  background:transparent;
+  border:none;
+  display:grid;
+  place-items:center;
+  text-align:center;
+}.mmedia:empty{display:none}
 .mmedia>*{animation:fade .5s ease}
 .mmedia video,.mmedia img{width:100%;height:100%;object-fit:cover;display:block}
 .mmedia .mph{font-weight:300;font-size:20px;padding:16px}
