@@ -48,11 +48,37 @@ Todo está en `data/projects.json`. Cada proyecto es un bloque así:
 - `tools`: `figma`, `adobe`, `blender`, `magnific`. Vacío `[]` para no mostrar ninguno.
 - `m`: el video, la imagen o el slider del proyecto. Con `null` se muestra un recuadro vacío.
 
+### Cómo conectar tus videos e imágenes (si no los ves en la web)
+
+Subir los archivos a `media/` **no alcanza**: cada proyecto tiene que decir qué archivo usa, en su campo `m` de `data/projects.json`. Mientras `m` sea `null`, se muestra un recuadro vacío.
+
+Dos formas:
+
+1. **Automática (recomendada):** pon los archivos en `media/<categoria>/<proyecto>/` y corre en tu computadora, desde la carpeta del proyecto:
+   `python3 tools/generar-media.py` (Mac) o `python tools/generar-media.py` (Windows).
+   El script completa el campo `m` de todos los proyectos y te avisa de errores (carpetas con nombre mal escrito, mayúsculas o espacios). Luego sube `data/projects.json` a GitHub.
+   - 1 video → video (una imagen llamada `poster.jpg` es la portada).
+   - 1 imagen → imagen. Varias imágenes → slider horizontal en orden alfabético (`01.jpg`, `02.jpg`…).
+   - Imágenes cuyo nombre empieza con `scroll` (`scroll-01.jpg`…) → se apilan en una sola columna con scroll.
+2. **Manual:** edita `m` a mano en `data/projects.json` (ver formatos abajo).
+
+Los nombres de carpeta son el nombre del proyecto en minúsculas, sin tildes y con guiones (`Universal Hotel Supply` → `universal-hotel-supply`).
+GitHub Pages distingue mayúsculas: `Video.MP4` no es lo mismo que `video.mp4`. Usa minúsculas y sin espacios.
+Después de subir cambios espera uno o dos minutos y recarga con Ctrl+Shift+R.
+
+### Imágenes más grandes que el recuadro
+
+El recuadro de cada proyecto funciona como máscara y la imagen se desplaza adentro (desktop y mobile):
+- Imagen **alta** (por ejemplo una landing page): llena el ancho del recuadro y se desplaza hacia abajo.
+- Imagen **ancha** (por ejemplo una ilustración muy larga): llena el alto y se desplaza hacia los costados. En desktop, la rueda del mouse también la mueve.
+- Imagen de proporción parecida al recuadro (16:9): lo llena sin scroll.
+Si quieres forzar el comportamiento, agrega `"fit": "y"`, `"x"` o `"c"` en `m`.
+
 Formatos de `m`:
 
 ```json
 { "type": "video",  "src": "media/…/video.mp4", "poster": "media/…/poster.jpg" }
-{ "type": "image",  "src": "media/…/01.jpg" }
+{ "type": "image",  "src": "media/…/01.jpg" }          // varias apiladas: "src": ["media/…/a.jpg", "media/…/b.jpg"]
 { "type": "slider", "dir": "h", "slides": ["media/…/01.jpg", "media/…/02.jpg"] }   // "h" horizontal, "v" vertical
 ```
 
