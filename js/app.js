@@ -239,16 +239,18 @@ if(document.startViewTransition&&WIPE[prev]&&WIPE[r.v]){
   clearTimeout(tm);
   document.body.classList.remove('leaving');
 
-  var directions=[
-    'wipe-left-to-right',
-    'wipe-right-to-left',
-    'wipe-top-to-bottom',
-    'wipe-bottom-to-top',
-    'wipe-diagonal-1',
-    'wipe-diagonal-2',
-    'wipe-diagonal-3',
-    'wipe-diagonal-4'
-  ];
+
+var directions=[
+  'wipe-h',
+  'wipe-hr',
+  'wipe-v',
+  'wipe-vr',
+  'wipe-d1',
+  'wipe-d2',
+  'wipe-d3',
+  'wipe-d4'
+];
+
 
   var root=document.documentElement;
   var direction=directions[
