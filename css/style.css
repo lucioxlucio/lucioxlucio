@@ -503,156 +503,120 @@ body.lbo{overflow:hidden}
 
 
 
-/* Wipe suave entre secciones */
 
-.top{view-transition-name:vt-header}
-.clippy{view-transition-name:vt-head}
+/* Wipe horizontal y vertical con borde difuminado */
+
+@property --wipe-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: -60px;
+}
+
+.top {
+  view-transition-name: vt-header;
+}
+
+.clippy {
+  view-transition-name: vt-head;
+}
 
 ::view-transition-old(root),
-::view-transition-new(root){
-  animation:none;
-  mix-blend-mode:normal;
+::view-transition-new(root) {
+  animation-duration: .7s;
+  animation-timing-function: cubic-bezier(.65, 0, .35, 1);
+  animation-fill-mode: both;
+  mix-blend-mode: normal;
 }
 
-::view-transition-old(root){
-  z-index:0;
+::view-transition-old(root) {
+  animation-name: none;
+  z-index: 0;
 }
 
-::view-transition-new(root){
-  z-index:1;
-  animation-duration:.7s;
-  animation-timing-function:cubic-bezier(.65,0,.35,1);
-  animation-fill-mode:both;
+::view-transition-new(root) {
+  z-index: 1;
+  --wipe-position: -60px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
 
-/* Horizontal: izquierda → derecha */
-html.wipe-h::view-transition-new(root){
-  animation-name:wipe-h;
-}
-@keyframes wipe-h{
-  from{
-    clip-path:inset(0 100% 0 0);
-    filter:blur(8px);
-  }
-  15%{filter:blur(5px)}
-  to{
-    clip-path:inset(0 0 0 0);
-    filter:blur(0);
-  }
-}
-
-/* Horizontal: derecha → izquierda */
-html.wipe-hr::view-transition-new(root){
-  animation-name:wipe-hr;
-}
-@keyframes wipe-hr{
-  from{
-    clip-path:inset(0 0 0 100%);
-    filter:blur(8px);
-  }
-  15%{filter:blur(5px)}
-  to{
-    clip-path:inset(0 0 0 0);
-    filter:blur(0);
-  }
+/* Izquierda → derecha */
+html.wipe-h::view-transition-new(root) {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  mask-image: linear-gradient(
+    to right,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  animation-name: wipe-horizontal;
 }
 
-/* Vertical: arriba → abajo */
-html.wipe-v::view-transition-new(root){
-  animation-name:wipe-v;
-}
-@keyframes wipe-v{
-  from{
-    clip-path:inset(0 0 100% 0);
-    filter:blur(8px);
-  }
-  15%{filter:blur(5px)}
-  to{
-    clip-path:inset(0 0 0 0);
-    filter:blur(0);
-  }
-}
-
-/* Vertical: abajo → arriba */
-html.wipe-vr::view-transition-new(root){
-  animation-name:wipe-vr;
-}
-@keyframes wipe-vr{
-  from{
-    clip-path:inset(100% 0 0 0);
-    filter:blur(8px);
-  }
-  15%{filter:blur(5px)}
-  to{
-    clip-path:inset(0 0 0 0);
-    filter:blur(0);
-  }
+/* Derecha → izquierda */
+html.wipe-hr::view-transition-new(root) {
+  -webkit-mask-image: linear-gradient(
+    to left,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  mask-image: linear-gradient(
+    to left,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  animation-name: wipe-horizontal;
 }
 
-/* Diagonal: desde esquina superior izquierda */
-html.wipe-d1::view-transition-new(root){
-  animation-name:wipe-d1;
-}
-@keyframes wipe-d1{
-  from{
-    clip-path:polygon(0 0,0 0,0 0);
-    filter:blur(8px);
-  }
-  to{
-    clip-path:polygon(0 0,100% 0,0 100%);
-    filter:blur(0);
-  }
-}
-
-/* Diagonal: desde esquina superior derecha */
-html.wipe-d2::view-transition-new(root){
-  animation-name:wipe-d2;
-}
-@keyframes wipe-d2{
-  from{
-    clip-path:polygon(100% 0,100% 0,100% 0);
-    filter:blur(8px);
-  }
-  to{
-    clip-path:polygon(0 0,100% 0,100% 100%);
-    filter:blur(0);
-  }
+/* Arriba → abajo */
+html.wipe-v::view-transition-new(root) {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  animation-name: wipe-vertical;
 }
 
-/* Diagonal: desde esquina inferior izquierda */
-html.wipe-d3::view-transition-new(root){
-  animation-name:wipe-d3;
-}
-@keyframes wipe-d3{
-  from{
-    clip-path:polygon(0 100%,0 100%,0 100%);
-    filter:blur(8px);
-  }
-  to{
-    clip-path:polygon(0 0,0 100%,100% 100%);
-    filter:blur(0);
-  }
-}
-
-/* Diagonal: desde esquina inferior derecha */
-html.wipe-d4::view-transition-new(root){
-  animation-name:wipe-d4;
-}
-@keyframes wipe-d4{
-  from{
-    clip-path:polygon(100% 100%,100% 100%,100% 100%);
-    filter:blur(8px);
-  }
-  to{
-    clip-path:polygon(0 100%,100% 0,100% 100%);
-    filter:blur(0);
-  }
+/* Abajo → arriba */
+html.wipe-vr::view-transition-new(root) {
+  -webkit-mask-image: linear-gradient(
+    to top,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  mask-image: linear-gradient(
+    to top,
+    #000 calc(var(--wipe-position) - 60px),
+    transparent calc(var(--wipe-position) + 60px)
+  );
+  animation-name: wipe-vertical;
 }
 
-@media (prefers-reduced-motion:reduce){
+/* El borde recorre toda la pantalla */
+@keyframes wipe-horizontal {
+  from { --wipe-position: -60px; }
+  to   { --wipe-position: calc(100% + 60px); }
+}
+
+@keyframes wipe-vertical {
+  from { --wipe-position: -60px; }
+  to   { --wipe-position: calc(100% + 60px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
   ::view-transition-group(*),
   ::view-transition-old(*),
-  ::view-transition-new(*){
-    animation:none!important;
+  ::view-transition-new(*) {
+    animation: none !important;
   }
 }
