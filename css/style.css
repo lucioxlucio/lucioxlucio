@@ -522,7 +522,7 @@ body.lbo{overflow:hidden}
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
-  animation-duration: .7s;
+  animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(.65, 0, .35, 1);
   animation-fill-mode: both;
   mix-blend-mode: normal;
