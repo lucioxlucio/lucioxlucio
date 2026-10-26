@@ -501,7 +501,9 @@ body.lbo{overflow:hidden}
 
 
 
-/* Transiciones laterales, verticales y diagonales entre secciones */
+
+/* Wipe transition estilo Star Wars */
+
 .top{view-transition-name:vt-header}
 .clippy{view-transition-name:vt-head}
 
@@ -512,34 +514,87 @@ body.lbo{overflow:hidden}
 }
 
 ::view-transition-old(root){
-  animation:vt-exit .65s cubic-bezier(.65,0,.35,1) both;
+  z-index:0;
 }
 
 ::view-transition-new(root){
-  animation:vt-enter .65s cubic-bezier(.65,0,.35,1) both;
+  z-index:1;
+  animation-duration:.7s;
+  animation-timing-function:cubic-bezier(.65,0,.35,1);
+  animation-fill-mode:both;
 }
 
-/* La dirección se define desde JavaScript */
-@keyframes vt-exit{
-  from{
-    transform:translate(0,0);
-    opacity:1;
-  }
-  to{
-    transform:translate(var(--exit-x, -8vw),var(--exit-y, 0));
-    opacity:0;
-  }
+/* Izquierda → derecha */
+html.wipe-left-to-right::view-transition-new(root){
+  animation-name:wipe-left-to-right;
+}
+@keyframes wipe-left-to-right{
+  from{clip-path:inset(0 100% 0 0)}
+  to{clip-path:inset(0 0 0 0)}
 }
 
-@keyframes vt-enter{
-  from{
-    transform:translate(var(--enter-x, 8vw),var(--enter-y, 0));
-    opacity:0;
-  }
-  to{
-    transform:translate(0,0);
-    opacity:1;
-  }
+/* Derecha → izquierda */
+html.wipe-right-to-left::view-transition-new(root){
+  animation-name:wipe-right-to-left;
+}
+@keyframes wipe-right-to-left{
+  from{clip-path:inset(0 0 0 100%)}
+  to{clip-path:inset(0 0 0 0)}
+}
+
+/* Arriba → abajo */
+html.wipe-top-to-bottom::view-transition-new(root){
+  animation-name:wipe-top-to-bottom;
+}
+@keyframes wipe-top-to-bottom{
+  from{clip-path:inset(0 0 100% 0)}
+  to{clip-path:inset(0 0 0 0)}
+}
+
+/* Abajo → arriba */
+html.wipe-bottom-to-top::view-transition-new(root){
+  animation-name:wipe-bottom-to-top;
+}
+@keyframes wipe-bottom-to-top{
+  from{clip-path:inset(100% 0 0 0)}
+  to{clip-path:inset(0 0 0 0)}
+}
+
+/* Diagonales */
+html.wipe-diagonal-1::view-transition-new(root){
+  animation-name:wipe-diagonal-1;
+}
+@keyframes wipe-diagonal-1{
+  from{clip-path:polygon(0 0,0 0,0 0,0 0)}
+  50%{clip-path:polygon(0 0,100% 0,0 100%,0 100%)}
+  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+}
+
+html.wipe-diagonal-2::view-transition-new(root){
+  animation-name:wipe-diagonal-2;
+}
+@keyframes wipe-diagonal-2{
+  from{clip-path:polygon(100% 0,100% 0,100% 0,100% 0)}
+  50%{clip-path:polygon(0 0,100% 0,100% 100%,100% 100%)}
+  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+}
+
+html.wipe-diagonal-3::view-transition-new(root){
+  animation-name:wipe-diagonal-3;
+}
+@keyframes wipe-diagonal-3{
+  from{clip-path:polygon(0 100%,0 100%,0 100%,0 100%)}
+  50%{clip-path:polygon(0 0,0 100%,100% 100%,0 100%)}
+  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+}
+
+html.wipe-diagonal-4::view-transition-new(root){
+  animation-name:wipe-diagonal-4;
+}
+@keyframes wipe-diagonal-4{
+  from{clip-path:polygon(100% 100%,100% 100%,100% 100%,100% 100%)}
+  50%{clip-path:polygon(100% 0,100% 100%,0 100%,100% 100%)}
+  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
 }
 
 @media (prefers-reduced-motion:reduce){
