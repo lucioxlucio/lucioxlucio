@@ -286,7 +286,7 @@ body{--tc:#4a86a5;transition:--tc 1s ease}
 body[data-view="sobre-mi"]{--tc:#5d97b6}
 body[data-view="trabajos"]{--tc:#4d80e6}
 body[data-view="contacto"]{--tc:#e68087}
-body::before{content:"";position:fixed;top:0;left:0;right:0;height:calc(72px + env(safe-area-inset-top,0px));z-index:21;pointer-events:none;background:linear-gradient(to bottom,var(--tc) 0,var(--tc) 62%,transparent 100%)}
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:calc(80px + env(safe-area-inset-top,0px));z-index:21;pointer-events:none;background:linear-gradient(to bottom,var(--tc) 0,var(--tc) 50%,transparent 100%)}
 @media (prefers-reduced-motion:reduce){body{transition:none}}
 
 /* Visor ampliado (lightbox): imagen o video grande sobre un fondo desenfocado */
