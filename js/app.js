@@ -234,33 +234,43 @@
     if(r.v===cur){if(r.v==='works')applyWorks(r);return;}   /* dentro de Proyectos: solo cambia el estado */
     var prev=cur; cur=r.v; setNav(r.v);
     
+
 if(document.startViewTransition&&WIPE[prev]&&WIPE[r.v]){
   clearTimeout(tm);
   document.body.classList.remove('leaving');
 
-  var dirs=[
-    [-1,0],[1,0],[0,-1],[0,1],
-    [-1,-1],[1,-1],[-1,1],[1,1]
+  var directions=[
+    'wipe-left-to-right',
+    'wipe-right-to-left',
+    'wipe-top-to-bottom',
+    'wipe-bottom-to-top',
+    'wipe-diagonal-1',
+    'wipe-diagonal-2',
+    'wipe-diagonal-3',
+    'wipe-diagonal-4'
   ];
 
-  var d=dirs[Math.floor(Math.random()*dirs.length)];
-  var x=d[0]*8;
-  var y=d[1]*8;
   var root=document.documentElement;
+  var direction=directions[
+    Math.floor(Math.random()*directions.length)
+  ];
 
-  root.style.setProperty('--exit-x',(-x)+'vw');
-  root.style.setProperty('--exit-y',(-y)+'vh');
-  root.style.setProperty('--enter-x',x+'vw');
-  root.style.setProperty('--enter-y',y+'vh');
+  root.classList.remove(...directions);
+  root.classList.add(direction);
 
-  document.startViewTransition(function(){
+  var transition=document.startViewTransition(function(){
     var q=parse();
     show(q.v);
     if(q.v==='works')applyWorks(q);
   });
 
+  transition.finished.finally(function(){
+    root.classList.remove(...directions);
+  });
+
   return;
 }
+
 
     document.body.dataset.view=THEME[r.v];       /* el degradado empieza a mezclar sus colores */
     document.body.classList.add('leaving');      /* el contenido se desenfoca y desaparece */
