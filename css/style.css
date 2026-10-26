@@ -288,3 +288,23 @@ body[data-view="trabajos"]{--tc:#4d80e6}
 body[data-view="contacto"]{--tc:#e68087}
 body::before{content:"";position:fixed;top:0;left:0;right:0;height:calc(72px + env(safe-area-inset-top,0px));z-index:21;pointer-events:none;background:linear-gradient(to bottom,var(--tc) 0,var(--tc) 62%,transparent 100%)}
 @media (prefers-reduced-motion:reduce){body{transition:none}}
+
+/* Visor ampliado (lightbox): imagen o video grande sobre un fondo desenfocado */
+.pmedia img,.pmedia video,.mmedia img,.mmedia video{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:300;background:rgba(12,18,40,.38);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);opacity:0;visibility:hidden;transition:opacity .3s ease,visibility 0s .3s}
+.lb.open{opacity:1;visibility:visible;transition:opacity .3s ease}
+body.lbo{overflow:hidden}
+.lb-s{position:absolute;inset:0;display:flex;overflow:auto;padding:72px 24px 56px;outline:0;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.45) transparent}
+.lb-s>*{display:block;flex:none;margin:auto}
+.lb-s.c>*{max-width:none;max-height:none;object-fit:contain;border-radius:12px}
+.lb-s.y>*{align-self:flex-start;width:min(100%,1100px);height:auto;margin:0 auto;border-radius:12px}
+.lb-s.x>*{height:100%;width:auto;max-width:none;border-radius:12px}
+.lb-s video{cursor:default}
+.lb-x,.lb-p,.lb-n{position:fixed;z-index:2;padding:0;background:none;border:0;color:#fff;font:inherit;cursor:pointer;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.lb-x{top:24px;right:24px;width:32px;height:32px;font-size:24px;line-height:32px}
+.lb-p,.lb-n{top:50%;width:40px;height:40px;margin-top:-20px;font-size:32px;line-height:40px}
+.lb-p{left:16px}.lb-n{right:16px}
+.lb-c{position:fixed;bottom:16px;left:0;right:0;z-index:2;text-align:center;font-size:16px;line-height:24px;font-weight:300;color:#fff;pointer-events:none;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.lb:not(.multi) .lb-p,.lb:not(.multi) .lb-n,.lb:not(.multi) .lb-c{display:none}
+@media (max-width:768px){.lb-x{right:16px}.lb-s{padding:72px 16px 56px}.lb-p{left:0}.lb-n{right:0}}
+@media (prefers-reduced-motion:reduce){.lb,.lb.open{transition:none}}
