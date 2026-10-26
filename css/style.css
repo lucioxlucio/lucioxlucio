@@ -502,7 +502,8 @@ body.lbo{overflow:hidden}
 
 
 
-/* Wipe transition estilo Star Wars */
+
+/* Wipe suave entre secciones */
 
 .top{view-transition-name:vt-header}
 .clippy{view-transition-name:vt-head}
@@ -524,77 +525,128 @@ body.lbo{overflow:hidden}
   animation-fill-mode:both;
 }
 
-/* Izquierda → derecha */
-html.wipe-left-to-right::view-transition-new(root){
-  animation-name:wipe-left-to-right;
+/* Horizontal: izquierda → derecha */
+html.wipe-h::view-transition-new(root){
+  animation-name:wipe-h;
 }
-@keyframes wipe-left-to-right{
-  from{clip-path:inset(0 100% 0 0)}
-  to{clip-path:inset(0 0 0 0)}
-}
-
-/* Derecha → izquierda */
-html.wipe-right-to-left::view-transition-new(root){
-  animation-name:wipe-right-to-left;
-}
-@keyframes wipe-right-to-left{
-  from{clip-path:inset(0 0 0 100%)}
-  to{clip-path:inset(0 0 0 0)}
+@keyframes wipe-h{
+  from{
+    clip-path:inset(0 100% 0 0);
+    filter:blur(8px);
+  }
+  15%{filter:blur(5px)}
+  to{
+    clip-path:inset(0 0 0 0);
+    filter:blur(0);
+  }
 }
 
-/* Arriba → abajo */
-html.wipe-top-to-bottom::view-transition-new(root){
-  animation-name:wipe-top-to-bottom;
+/* Horizontal: derecha → izquierda */
+html.wipe-hr::view-transition-new(root){
+  animation-name:wipe-hr;
 }
-@keyframes wipe-top-to-bottom{
-  from{clip-path:inset(0 0 100% 0)}
-  to{clip-path:inset(0 0 0 0)}
-}
-
-/* Abajo → arriba */
-html.wipe-bottom-to-top::view-transition-new(root){
-  animation-name:wipe-bottom-to-top;
-}
-@keyframes wipe-bottom-to-top{
-  from{clip-path:inset(100% 0 0 0)}
-  to{clip-path:inset(0 0 0 0)}
+@keyframes wipe-hr{
+  from{
+    clip-path:inset(0 0 0 100%);
+    filter:blur(8px);
+  }
+  15%{filter:blur(5px)}
+  to{
+    clip-path:inset(0 0 0 0);
+    filter:blur(0);
+  }
 }
 
-/* Diagonales */
-html.wipe-diagonal-1::view-transition-new(root){
-  animation-name:wipe-diagonal-1;
+/* Vertical: arriba → abajo */
+html.wipe-v::view-transition-new(root){
+  animation-name:wipe-v;
 }
-@keyframes wipe-diagonal-1{
-  from{clip-path:polygon(0 0,0 0,0 0,0 0)}
-  50%{clip-path:polygon(0 0,100% 0,0 100%,0 100%)}
-  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
-}
-
-html.wipe-diagonal-2::view-transition-new(root){
-  animation-name:wipe-diagonal-2;
-}
-@keyframes wipe-diagonal-2{
-  from{clip-path:polygon(100% 0,100% 0,100% 0,100% 0)}
-  50%{clip-path:polygon(0 0,100% 0,100% 100%,100% 100%)}
-  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+@keyframes wipe-v{
+  from{
+    clip-path:inset(0 0 100% 0);
+    filter:blur(8px);
+  }
+  15%{filter:blur(5px)}
+  to{
+    clip-path:inset(0 0 0 0);
+    filter:blur(0);
+  }
 }
 
-html.wipe-diagonal-3::view-transition-new(root){
-  animation-name:wipe-diagonal-3;
+/* Vertical: abajo → arriba */
+html.wipe-vr::view-transition-new(root){
+  animation-name:wipe-vr;
 }
-@keyframes wipe-diagonal-3{
-  from{clip-path:polygon(0 100%,0 100%,0 100%,0 100%)}
-  50%{clip-path:polygon(0 0,0 100%,100% 100%,0 100%)}
-  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+@keyframes wipe-vr{
+  from{
+    clip-path:inset(100% 0 0 0);
+    filter:blur(8px);
+  }
+  15%{filter:blur(5px)}
+  to{
+    clip-path:inset(0 0 0 0);
+    filter:blur(0);
+  }
 }
 
-html.wipe-diagonal-4::view-transition-new(root){
-  animation-name:wipe-diagonal-4;
+/* Diagonal: desde esquina superior izquierda */
+html.wipe-d1::view-transition-new(root){
+  animation-name:wipe-d1;
 }
-@keyframes wipe-diagonal-4{
-  from{clip-path:polygon(100% 100%,100% 100%,100% 100%,100% 100%)}
-  50%{clip-path:polygon(100% 0,100% 100%,0 100%,100% 100%)}
-  to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+@keyframes wipe-d1{
+  from{
+    clip-path:polygon(0 0,0 0,0 0);
+    filter:blur(8px);
+  }
+  to{
+    clip-path:polygon(0 0,100% 0,0 100%);
+    filter:blur(0);
+  }
+}
+
+/* Diagonal: desde esquina superior derecha */
+html.wipe-d2::view-transition-new(root){
+  animation-name:wipe-d2;
+}
+@keyframes wipe-d2{
+  from{
+    clip-path:polygon(100% 0,100% 0,100% 0);
+    filter:blur(8px);
+  }
+  to{
+    clip-path:polygon(0 0,100% 0,100% 100%);
+    filter:blur(0);
+  }
+}
+
+/* Diagonal: desde esquina inferior izquierda */
+html.wipe-d3::view-transition-new(root){
+  animation-name:wipe-d3;
+}
+@keyframes wipe-d3{
+  from{
+    clip-path:polygon(0 100%,0 100%,0 100%);
+    filter:blur(8px);
+  }
+  to{
+    clip-path:polygon(0 0,0 100%,100% 100%);
+    filter:blur(0);
+  }
+}
+
+/* Diagonal: desde esquina inferior derecha */
+html.wipe-d4::view-transition-new(root){
+  animation-name:wipe-d4;
+}
+@keyframes wipe-d4{
+  from{
+    clip-path:polygon(100% 100%,100% 100%,100% 100%);
+    filter:blur(8px);
+  }
+  to{
+    clip-path:polygon(0 100%,100% 0,100% 100%);
+    filter:blur(0);
+  }
 }
 
 @media (prefers-reduced-motion:reduce){
