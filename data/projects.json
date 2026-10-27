@@ -360,8 +360,22 @@
      "adobe"
     ],
     "m": {
-  "type": "video",
-  "src": "media/editorial/les-isoles/ISOLES.mp4"
+  "type": "images",
+     "fit": "x",
+  "src": [ "media/editorial/les-isoles/ISOLES.mp4",
+   "media/editorial/les-isoles/ISO 1.png",
+   "media/editorial/les-isoles/ISO 2.png",
+   "media/editorial/les-isoles/ISO 3.png",
+   "media/editorial/les-isoles/ISO 4.png",
+   "media/editorial/les-isoles/ISO 5.png",
+   "media/editorial/les-isoles/ISO 6.png",
+   "media/editorial/les-isoles/ISO 7.png",
+   "media/editorial/les-isoles/ISO 8.png",
+   "media/editorial/les-isoles/ISO 9.png",
+   "media/editorial/les-isoles/ISO 10.png",
+   "media/editorial/les-isoles/ISO 11.png",
+   "media/editorial/les-isoles/ISO 12.png"
+  ]
 }
    },
    {
