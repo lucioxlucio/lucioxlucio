@@ -304,8 +304,20 @@
      "adobe"
     ],
     "m": {
-  "type": "video",
-  "src": "media/editorial/el-arbol/ELARBOL.mp4"
+  "type": "iamge",
+  "fit": "x",
+  "src": [ 
+   "media/editorial/el-arbol/ELARBOL.mp4",
+   "media/editorial/el-arbol/ARBOL 01.png",
+   "media/editorial/el-arbol/ARBOL 02.png",
+   "media/editorial/el-arbol/ARBOL 03.png",
+   "media/editorial/el-arbol/ARBOL 04.png",
+   "media/editorial/el-arbol/ARBOL 05.png",
+   "media/editorial/el-arbol/ARBOL 06.png",
+   "media/editorial/el-arbol/ARBOL 07.png",
+   "media/editorial/el-arbol/ARBOL 08.png",
+   "media/editorial/el-arbol/ARBOL 09.png"
+  ]
 }
    },
    {
@@ -318,8 +330,20 @@
      "adobe"
     ],
     "m": {
-  "type": "video",
-  "src": "media/editorial/el-rio/ELRIO.mp4"
+  "type": "image",
+  "fit": "x",
+  "src": 
+     [ 
+   "media/editorial/el-rio/ELRIO.mp4",
+   "media/editorial/el-rio/Rio 01.png",
+   "media/editorial/el-rio/Rio 02.png",
+   "media/editorial/el-rio/Rio 03.png",
+   "media/editorial/el-rio/Rio 04.png",
+   "media/editorial/el-rio/Rio 05.png",
+   "media/editorial/el-rio/Rio 06.png",
+   "media/editorial/el-rio/Rio 07.png",
+   "media/editorial/el-rio/Rio 08.png"
+     ]
 }
    },
    {
@@ -332,8 +356,15 @@
      "adobe"
     ],
     "m": {
-  "type": "video",
-  "src": "media/editorial/ma/MA.mp4"
+  "type": "image",
+     "fit": "x",
+  "src":[ "media/editorial/ma/MA.mp4",
+   "media/editorial/ma/MA 01.png",
+   "media/editorial/ma/MA 02.png",
+   "media/editorial/ma/MA 03.png",
+   "media/editorial/ma/MA 04.png",
+   "media/editorial/ma/MA 05.png"
+  ]
 }
    },
    {
@@ -347,7 +378,15 @@
     ],
     "m": {
   "type": "video",
-  "src": "media/editorial/sgto-cabral/Cabral.mp4"
+     "fit": "x",
+  "src": [ "media/editorial/sgto-cabral/Cabral.mp4",
+   "media/editorial/sgto-cabral/S 01.png",
+   "media/editorial/sgto-cabral/S 02.png",
+   "media/editorial/sgto-cabral/S 03.png",
+   "media/editorial/sgto-cabral/S 04.png",
+   "media/editorial/sgto-cabral/S 05.png",
+   "media/editorial/sgto-cabral/S 06.png"
+  ]
 }
    },
    {
@@ -366,11 +405,6 @@
    "media/editorial/les-isoles/ISO 1.png",
    "media/editorial/les-isoles/ISO 2.png",
    "media/editorial/les-isoles/ISO 3.png",
-   "media/editorial/les-isoles/ISO 4.png",
-   "media/editorial/les-isoles/ISO 5.png",
-   "media/editorial/les-isoles/ISO 6.png",
-   "media/editorial/les-isoles/ISO 7.png",
-   "media/editorial/les-isoles/ISO 8.png",
    "media/editorial/les-isoles/ISO 9.png",
    "media/editorial/les-isoles/ISO 10.png",
    "media/editorial/les-isoles/ISO 11.png",
