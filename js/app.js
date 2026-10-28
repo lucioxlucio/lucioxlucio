@@ -32,7 +32,7 @@
       if(c){var k=0; if(p[2]){c.items.forEach(function(it,i){if(slug(it.n)===p[2])k=i;});} return {v:'works',c:c,k:k,none:!p[2]};}
       return {v:'works'};
     }
-    return {v:'home'};
+    return {v:'about'};
   }
   function title(r){return r.c?(r.none?nm(r.c.n):nm(r.c.items[r.k].n)+' · '+nm(r.c.n)):I[L].t[r.v];}
   function infoIn(i){
