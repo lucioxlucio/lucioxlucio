@@ -116,7 +116,7 @@ body[data-view="contacto"] .clippy{display:none}
 
 /* Proyectos · 12 columnas, margen 24, gutter 8 (Figma 8:96 y 13:93) */
 @keyframes fade{from{opacity:0}to{opacity:1}}
-.works{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:16px;row-gap:40px;align-items:start;max-width:1440px;min-height:100vh;margin:0 auto;padding:88px var(--pad) 80px}
+.works{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:16px;row-gap:40px;align-items:start;max-width:1440px;min-height:100vh;margin:0 auto;padding:88px var(--pad) 24px}
 #cats{display:contents}
 .cat{grid-column:span 2;grid-row:1;transition:opacity .25s ease}
 .chead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;font-size:20px;line-height:32px;font-weight:400}
