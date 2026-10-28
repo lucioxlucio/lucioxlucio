@@ -36,7 +36,7 @@ body:not([data-view="sobre-mi"]) .veil{display:none}
 
 /* Sobre mí: foto fija, texto que scrollea */
 .me{position:fixed;top:calc(var(--photo-top) + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);width:var(--photo-w);height:auto;z-index:10;display:block}
-.about{max-width:851px;margin:0 auto;padding:calc(var(--photo-top) + var(--photo-w)*1.078) 24px 80px;text-align:center;font-weight:400;font-size:24px;line-height:32px}
+.about{max-width:851px;margin:0 auto;padding:calc(var(--photo-top) + var(--photo-w)*1.078) 24px 80px;text-align:center;font-weight:400;font-size:24px;line-height:30px}
 .about p:last-child{margin-bottom:0}
 .about p{margin:0 0 56px}
 
