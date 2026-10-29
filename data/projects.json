@@ -246,16 +246,18 @@
     "n": "Sobremesa",
     "d": [
      "Tesis de diseño gráfico realizada en el año 2023 en FADU, UBA, cátedra Gabriele.",
-     "Graphic design thesis completed in 2023 at FADU, UBA, Gabriele chair."
+     "Graphic design thesis completed in 2023 at FADU, UBA."
     ],
       "l": [
      {
       "t": "Link al prototipo",
       "u": "https://www.figma.com/proto/6LHXLlCT3sc35IC22pU3YY/CALOCERO-ARCELLA-LUCIO?node-id=2407-15770&page-id=1752%3A13379&starting-point-node-id=2407%3A15770&scaling=min-zoom&content-scaling=fixed&t=4Mu3Ud4Wo6aV7YhU-1"
      }
+      ],
     "tools": [
      "figma",
-     "adobe"
+     "adobe",
+     "magnific"
     ],
         "m": {
   "type": "image",
