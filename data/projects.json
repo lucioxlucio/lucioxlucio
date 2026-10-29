@@ -146,7 +146,7 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+    "m": { "type": "video", "src": "media/motion-graphics/the-gettys-company/Gettys.mp4"}
    },
    {
     "n": "Windmill",
