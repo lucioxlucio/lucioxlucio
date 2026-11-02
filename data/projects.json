@@ -22,9 +22,9 @@
     "fit": "x",
     "src": 
     [ 
-     "media/branca/[ BRANCA ] Video 01.mp4", 
-     "media/branca/[ BRANCA ] Video 02.mp4", 
-     "media/branca/[ BRANCA ] Video 03.mp4"
+     "media/motion-graphics/branca/[ BRANCA ] Video 01.mp4", 
+     "media/motion-graphics/branca/[ BRANCA ] Video 02.mp4", 
+     "media/motion-graphics/branca/[ BRANCA ] Video 03.mp4"
     ]
     }
    },
@@ -81,7 +81,17 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+   "m": {
+    "type": "video",
+    "fit": "x",
+    "src": 
+    [ 
+     "media/motion-graphics/material-bank/Mobility.mp4", 
+     "media/motion-graphics/material-bank/Full2.mp4", 
+     "media/motion-graphics/material-bank/Sas2.mp4", 
+     "media/motion-graphics/material-bank/Boards2.mp4" 
+    ]
+    }
    },
    {
     "n": "Modular Closets",
