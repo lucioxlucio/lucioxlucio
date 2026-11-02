@@ -24,7 +24,7 @@
     [ 
      "media/branca/[ BRANCA ] Video 01.mp4", 
      "media/branca/[ BRANCA ] Video 02.mp4", 
-     "media/branca/[ BRANCA ] Video 03.mp4", 
+     "media/branca/[ BRANCA ] Video 03.mp4"
     ]
     }
    },
@@ -126,7 +126,10 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+    "m": {
+  "type": "video",
+  "src": "media/motion-graphics/relic/Relic.mp4"
+}
    },
    {
     "n": "Rocksalt",
@@ -171,9 +174,10 @@
      "adobe",
      "magnific"
     ],
-    "m": null
-   }
-  ]
+    "m": {
+  "type": "video",
+  "src": "media/motion-graphics/windmill/Windmill.mp4"
+    }
  },
  {
   "id": "ux-ui",
