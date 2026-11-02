@@ -17,7 +17,16 @@
      "adobe",
      "magnific"
     ],
-    "m": null
+    "m": {
+    "type": "video",
+    "fit": "x",
+    "src": 
+    [ 
+     "media/branca/[ BRANCA ] Video 01.mp4", 
+     "media/branca/[ BRANCA ] Video 02.mp4", 
+     "media/branca/[ BRANCA ] Video 03.mp4", 
+    ]
+    }
    },
    {
     "n": "Carpano",
